@@ -1,0 +1,10 @@
+{
+  "question": "Does melatonin improve quality of life of cancer patients?",
+  "processed_n": 10,
+  "label_counts": {
+    "pro": 6,
+    "unclear": 3,
+    "mixed": 1
+  },
+  "run_ts_utc": "20251008T120100Z"
+}
