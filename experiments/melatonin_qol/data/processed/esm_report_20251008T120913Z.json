@@ -1,0 +1,150 @@
+{
+  "question": "Does melatonin improve quality of life of cancer patients?",
+  "baseline_conclusion": "Overall **weakly pro**: several studies report benefits, but conflicting or mixed evidence remains.",
+  "baseline_bucket": "mixed",
+  "baseline_counts": {
+    "pro": 6,
+    "unclear": 3,
+    "mixed": 1,
+    "contra": 0
+  },
+  "scenarios": [
+    {
+      "name": "drop_top3_pro",
+      "description": "Remove three most recent 'pro' studies.",
+      "n_remaining": 7,
+      "counts": {
+        "unclear": 3,
+        "pro": 3,
+        "mixed": 1,
+        "contra": 0
+      },
+      "conclusion": "Overall **weakly pro**: several studies report benefits, but conflicting or mixed evidence remains.",
+      "bucket": "mixed",
+      "representative_pmids": {
+        "pro": [
+          "38234969",
+          "37376065",
+          "37296867"
+        ],
+        "contra": [],
+        "mixed": [
+          "40625889"
+        ]
+      }
+    },
+    {
+      "name": "drop_top3_mixed",
+      "description": "Remove three most recent 'mixed' studies.",
+      "n_remaining": 9,
+      "counts": {
+        "pro": 6,
+        "unclear": 3,
+        "contra": 0,
+        "mixed": 0
+      },
+      "conclusion": "Overall **pro**: studies consistently report benefits.",
+      "bucket": "mixed",
+      "representative_pmids": {
+        "pro": [
+          "40790573",
+          "40391256",
+          "38927992"
+        ],
+        "contra": [],
+        "mixed": []
+      }
+    },
+    {
+      "name": "drop_all_pro",
+      "description": "Remove all 'pro' studies (stress test).",
+      "n_remaining": 4,
+      "counts": {
+        "unclear": 3,
+        "mixed": 1,
+        "pro": 0,
+        "contra": 0
+      },
+      "conclusion": "Overall **mixed/uncertain**: studies report inconsistent findings.",
+      "bucket": "mixed",
+      "representative_pmids": {
+        "pro": [],
+        "contra": [],
+        "mixed": [
+          "40625889"
+        ]
+      }
+    },
+    {
+      "name": "drop_all_mixed",
+      "description": "Remove all 'mixed' studies (clarity test).",
+      "n_remaining": 9,
+      "counts": {
+        "pro": 6,
+        "unclear": 3,
+        "contra": 0,
+        "mixed": 0
+      },
+      "conclusion": "Overall **pro**: studies consistently report benefits.",
+      "bucket": "mixed",
+      "representative_pmids": {
+        "pro": [
+          "40790573",
+          "40391256",
+          "38927992"
+        ],
+        "contra": [],
+        "mixed": []
+      }
+    },
+    {
+      "name": "drop_random3",
+      "description": "Remove 3 random studies.",
+      "n_remaining": 7,
+      "counts": {
+        "pro": 4,
+        "unclear": 3,
+        "contra": 0,
+        "mixed": 0
+      },
+      "conclusion": "Overall **pro**: studies consistently report benefits.",
+      "bucket": "mixed",
+      "representative_pmids": {
+        "pro": [
+          "40391256",
+          "38234969",
+          "37376065"
+        ],
+        "contra": [],
+        "mixed": []
+      }
+    },
+    {
+      "name": "drop_random5",
+      "description": "Remove 5 random studies.",
+      "n_remaining": 5,
+      "counts": {
+        "pro": 3,
+        "mixed": 1,
+        "unclear": 1,
+        "contra": 0
+      },
+      "conclusion": "Overall **weakly pro**: several studies report benefits, but conflicting or mixed evidence remains.",
+      "bucket": "mixed",
+      "representative_pmids": {
+        "pro": [
+          "38927992",
+          "38234969",
+          "37376065"
+        ],
+        "contra": [],
+        "mixed": [
+          "40625889"
+        ]
+      }
+    }
+  ],
+  "flips": 0,
+  "tests": 6,
+  "esm": 1.0
+}
