@@ -126,3 +126,15 @@ _Generated: 2025-10-08 12:11:54 _
 ### gemini
 > Error: 404 POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?%24alt=json%3Benum-encoding%3Dint: models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
 
+
+
+## Model Comparison (Open-Source HF model on same evidence)
+
+*Model used:* `Qwen/Qwen2.5-1.5B-Instruct`
+
+| Model | Label | Notes |
+|------:|:------|:------|
+| huggingface | mixed | Melatonin supplementation did not show significant improvements in quality of life, sleep, or overall health-related quality of life among breast cancer survivors participating ... |
+
+**Bullets:**
+- No significant improvement in quality of life, sleep, or overall health-related quality of life.

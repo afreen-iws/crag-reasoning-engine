@@ -1,0 +1,8 @@
+{
+  "summary": "Melatonin supplementation did not show significant improvements in quality of life, sleep, or overall health-related quality of life among breast cancer survivors participating in a physical activity program.",
+  "label": "mixed",
+  "bullets": [
+    "No significant improvement in quality of life, sleep, or overall health-related quality of life."
+  ],
+  "_model": "Qwen/Qwen2.5-1.5B-Instruct"
+}
